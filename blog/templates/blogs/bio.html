@@ -57,13 +57,13 @@
         <a class="nav-link" href="{% url 'home' %}">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'bio' %}">Biography</a>
+        <a class="nav-link active" href="{% url 'bio' %}">Biography</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'allblogs' %}">Music</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'video' %}">Videos</a>
+        <a class="nav-link" href="#">Videos</a>
       </li>
     </ul>
   </div>
@@ -74,11 +74,18 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Ramon Goose</h1>
+      <h1>Ramon's journey so far...</h1>
       <p class="lead text-muted">New E.P. Melencolia II coming soon....</p>
       <p>
-        <a href="http://www.youtube.com/ramongoose" class="btn btn-primary my-2">Youtube</a>
-        <a href="http://wwwfacebook.com/ramongooseofficial" class="btn btn-secondary my-2">Facebook</a>
+
+        Ramon Goose is one of the most versatile and unique Blues artists of his generation, grounded in an education of African styles, he has explored many distant musical genres and still continues to do so. He is now touring as his solo acoustic blues tour and also as a full band lineup.
+Ramon originally established himself as the guitarist; chief songwriter, producer and driving force for the acclaimed British band NuBlues (with Ed Vans), also working with Senegalese world music star Diabel Cissokho and forming The seminal band The West African Blues Project, his most recent new venture is Desert Rock.
+Born in England, from an early age Ramon was imbued with the music of the American South, especially pre-war Delta blues which influenced and continues to influence his guitar style. He has drawn inspiration from artists such as Blind Blake, Blind Boy Fuller, Robert Johnson and Ry Cooder. He has performed and toured all over the world and strives to be one of the most exciting and ground breaking contemporary Blues artists, constantly looking to extend and expand his musical horizons. In 2010 he set out to discover the roots of the Blues. The journey took him to West Africa and he spent time in Dakar, Senegal playing with griot and other musicians.
+He co-wrote, performed on and produced the album “Mansana Blues” with Kora star Diabel Cissokho. It was released to critical acclaim in 2010 ( Downbeat Magazine poll winner). Tracks of Ramon have been featured on Putamayo’s 2013 release “African Blues” and also the forthcoming African Blues compilation by World Music Network (April 2014).
+The West African Blues Project was Ramon’s next project (a collaboration with Senegalese singer Modou Toure) and in 2015 they released an album together which has so far received rave reviews in the press.
+Through the years Ramon has worked with Eric Bibb, Pee Wee Ellis, Chris Thomas King, Diabel Cissokho (Senegal), Daby Toure (Mauritania), Atongo Zimba (Ghana), Noumoucounda Cissoko, Najma Akhtar, Justin Adams & Julian Joseph to name a few. Currently working on a new album which Ramon wrote whilst travelling in Morocco and the Sahara Desert called Desert Rock. In 2016 he accepted the invitation to perform at Buckingham Palace.
+Ramon has come full circle with his latest venture ‘World Scatterlings’, music of vibrant, earthy and bluesy nature with world rhythms which has already made an impression in Ramon’s hometown – London, England.
+
       </p>
       <img src="{% static 'zora.jpg' %}" height="300" />
     </div>
@@ -89,20 +96,6 @@
 
       <div class="row">
 
-      	{% for job in jobs.all %}
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">{{ job.summary }}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                </div>
-              </div>
-            </div>
-          </div>
-		</div>
-		{% endfor %}
 
         </div>
       </div>
@@ -119,4 +112,3 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script></body>
-</html>
